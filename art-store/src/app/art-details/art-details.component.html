@@ -1,0 +1,6 @@
+<!--button appears if painting is over-->
+
+<!--event binding calls the notify.emit() method-->
+<p *ngIf="painting && painting.price > 8">
+    <button type="button" (click)="notify.emit()">Notify Me</button>
+</p>

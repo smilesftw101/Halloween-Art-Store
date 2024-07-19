@@ -1,0 +1,21 @@
+<h2>Painting Details</h2>
+
+<div *ngIf="painting">
+    <h3>{{ painting.name }}</h3>
+    <img [src]="painting.imageUrl" alt="{{ painting.name }}" style="width: 300px; height: auto;">
+    <h4>{{ painting.price | currency }}</h4>
+    <p>{{ painting.description }}</p>
+
+    <button type="button" (click)="addToCart(painting)">Add to Cart</button>
+
+    <button type="button" (click)="share()">
+      Share
+    </button>
+
+    <!--notify button from art-details-->
+    <app-art-details
+      [painting]="painting"
+      (notify)="onNotify()">
+    </app-art-details>
+  </div>
+  

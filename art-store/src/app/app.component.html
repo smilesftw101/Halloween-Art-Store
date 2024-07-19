@@ -1,0 +1,24 @@
+<main>
+
+  <header>
+
+    <!--this div contains website logo and name. Fill in empty space-->
+    <a [routerLink]="['/']">
+      <div class="logo">
+          <img src="assets/logo.jpg" alt="Halloween Art Store">
+      </div>
+    </a>
+
+    <!--leads to cart, after making route in app.module.ts-->
+    <a routerLink="/cart" class="checkout">
+      Checkout
+    </a>
+  </header>
+
+  <body>
+    <section class="content">
+      <!--makes routes functional for linking-->
+        <router-outlet></router-outlet>
+    </section>
+  </body>
+</main>

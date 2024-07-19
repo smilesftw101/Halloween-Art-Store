@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #1d1d1d; /* Dark background color for a spooky feel */
+  color: #fff; /* White text for better contrast */
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* Space between children elements */
+  align-items: center; /* Center vertically */
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+.checkout {
+  background-color: #ff6600; /* Orange color for the checkout button */
+  color: #fff;
+  padding: 10px 20px; /*styles the button*/
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 100px; /*moves button down from center*/
+}
+.checkout:hover{
+  opacity: 0.8;
+}
+
+button {
+  background-color: #ff6600; /* Orange color for the checkout button */
+  color: #fff;
+  padding: 10px 20px; /*styles the button*/
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 25px; /*adds space between buttons*/
+}
+
+button.hover{
+  opacity: 0.8;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px; /* Set a maximum width for the main content area */
+  margin: 0 auto; /* Center the content area horizontally */
+}
+
+.content {
+  background-color: #33333361;
+  padding: 20px;
+
+}
+
+/* Style links with a Halloween color */
+a {
+  color: #ff6600;
+}
+
+a:hover {
+  /*text-decoration: underline;*/
+  opacity: 0.8;
+}
+
+/*shopping cart styling*/
+.cart-item, .shipping-item {
+  width: 100%;
+  min-width: 400px;
+  max-width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 32px;
+  margin-bottom: 8px;
+  border-radius: 2px;
+  background-color: #ff6600;
+}
+
+/*user input in form*/
+input {
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #BDBDBD;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
+  text-transform: uppercase;
+}
+
+form {
+  margin-top: 25px;
+}

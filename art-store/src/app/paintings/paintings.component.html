@@ -1,0 +1,15 @@
+<h2>Art Selection</h2>
+
+<div *ngFor="let painting of paintings">
+    <h3>
+        <a [title]="painting.name + ' details'"
+            [routerLink]="['/paintings', painting.id]">
+            {{ painting.name }}
+        </a>
+    </h3>
+
+    <img [src]="painting.imageUrl" alt="{{ painting.name }}" style="width: 100px; height: auto;">
+
+    <p *ngIf="painting.price">Price: ${{ painting.price }}</p>
+
+</div>
